@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=VT323&display=swap" rel="stylesheet">
+    <title>Pokédex</title>
+</head>
+<body>
+    <h1 class="title">Pokédex</h1>
+    <div id="searchDiv" class="search-div">
+        <input id="searchInput" class="search-input" type="text" placeholder="Search Pokémon by Name">
+        <button id="searchButton" class="search-button">Search</button>
+        <div class="alert alert-danger" id="showError" role="alert">
+            This is a danger alert—check it out!
+        </div>
+    </div>
+
+    <div id="container" class="container">
+        <div id="pokemonContainer" class="pokemon-container">
+            <img id="pokemonPic" class="pokemon-pic" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg" height="200px" width="200px">
+        </div>
+        <div id="pokemonNameContainer" class="pokemon-name-container">
+            <p id="pokemonName" class="pokemon-name">Pikachu</p>
+        </div>
+        <div id="hpDiv" class="hp-div"></div>
+        <p id="hp" class="hp">HP: 35</p>
+        <div id="statsDiv" class="stats-div">
+            <div id="typeDiv" class="type-div">
+                <p id="staticType" class="static-type">Type</p>
+                <p id="dynamicType" class="dynamic-type">Electric</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div id="weightDiv" class="weight-div">
+                <p id="staticWeight" class="static-weight">Weight</p>
+                <p id="dynamicWeight" class="dynamic-weight">60kg</p>
+            </div>         
+            
+            <div class="divider"></div>
+            
+            <div id="heightDiv" class="height-div">
+                <p id="staticHeight" class="static-height">Height</p>
+                <p id="dynamicHeight" class="dynamic-height">4PkM</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
